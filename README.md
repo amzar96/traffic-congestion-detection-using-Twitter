@@ -1,4 +1,4 @@
-#Traffic Congestion Real Time Event Detection using Twitter (Bahasa Malaysia)
+# Traffic Congestion Real Time Event Detection using Twitter (Bahasa Malaysia)
 
 1. Streaming the tweet that contains traffic congestion keyword  24 hours 
 2. Detect each of the tweet is according to traffic jammed or not using Naive Bayes as a classifier. 
