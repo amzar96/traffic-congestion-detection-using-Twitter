@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<style>
+    @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+
+    html,
+    body {
+        height: 100%
+    }
+</style>
+
+<head>
+    <title>iTraffic Malaysia Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="alert alert-primary" role="alert">
+            Tweet at <b>{{ state }}</b> on <b>{{ date }}</b>
+        </div>
+        <table class="table table-striped table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Tweet</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Nearby Location</th>
+                    <th scope="col">Road</th>
+                    <th scope="col">City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    {% for tweet, time, neighbourhood, road, city, username in result %}
+
+                    <td>{{ tweet }}</td>
+                    <td>{{ username }}</td>
+                    <td>{{ time }}</td>
+                    <td>{{ neighbourhood }}</td>
+                    <td>{{ road }}</td>
+                    <td>{{ city }}</td>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
