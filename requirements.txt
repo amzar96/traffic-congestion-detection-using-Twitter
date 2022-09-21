@@ -50,7 +50,7 @@ toolz==0.10.0
 tqdm==4.35.0
 tweepy==3.8.0
 Unidecode==1.1.1
-urllib3==1.25.3
+urllib3==1.26.5
 wcwidth==0.1.7
 Werkzeug==0.15.5
 wrapt==1.11.2
