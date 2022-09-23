@@ -27,7 +27,7 @@ MarkupSafe==1.1.1
 networkx==2.3
 numpy==1.22.0
 oauthlib==3.1.0
-protobuf==3.15.0
+protobuf==3.18.3
 PySastrawi==1.2.0
 PySocks==1.7.0
 python-crfsuite==0.9.6
